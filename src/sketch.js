@@ -3,20 +3,12 @@ let detector
 
 
 //suono
-var song;
+let song;
 
-function setup(){
-	song = loadSound("woah.mp3", loaded)
+function preload(){
+	song = loadSound("woah.mp3")
 
 }
-
-function loaded(){
-	if (d > 40)
-	song.play()
-	else
-		d < 40
-		song.stop()
-	}
 
 
 
@@ -96,6 +88,14 @@ async function draw() {
 			fill(0, 0, 0)
 			ellipse (indice.x + 8, indice.y + 10, 10, 10)
 
+
+
+			if (d > 200) {
+				song.play()
+				}
+				else{
+					song.stop()
+				}
 		
 		}		
 	}
