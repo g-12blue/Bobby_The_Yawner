@@ -1,7 +1,6 @@
 let capture
 let detector
 
-
 //suono
 let song;
 
@@ -9,9 +8,6 @@ function preload(){
 	song = loadSound("woah.mp3")
 
 }
-
-
-
 
 async function setup() {
   
@@ -90,7 +86,7 @@ async function draw() {
 
 
 
-			if (d > 200) {
+			if (d > 100) {
 				song.play()
 				}
 				else{
